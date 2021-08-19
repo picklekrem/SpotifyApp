@@ -29,6 +29,7 @@
 		EA83DD2C26CE79EA0001DAA5 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD2B26CE79EA0001DAA5 /* AudioTrack.swift */; };
 		EA83DD2E26CE79F60001DAA5 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD2D26CE79F60001DAA5 /* Artist.swift */; };
 		EA83DD3026CE7A010001DAA5 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD2F26CE7A010001DAA5 /* UserProfile.swift */; };
+		EA83DD3226CE88B10001DAA5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD3126CE88B10001DAA5 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		EA83DD2B26CE79EA0001DAA5 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		EA83DD2D26CE79F60001DAA5 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		EA83DD2F26CE7A010001DAA5 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		EA83DD3126CE88B10001DAA5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,11 +90,11 @@
 		EA83DCF226CE6D120001DAA5 /* SpotifyApp */ = {
 			isa = PBXGroup;
 			children = (
+				EA83DD0A26CE761D0001DAA5 /* Resources */,
 				EA83DD0C26CE76480001DAA5 /* Managers */,
 				EA83DD0B26CE76380001DAA5 /* ViewModels */,
-				EA83DD0A26CE761D0001DAA5 /* Resources */,
-				EA83DD0926CE76130001DAA5 /* Views */,
 				EA83DD0826CE760C0001DAA5 /* Models */,
+				EA83DD0926CE76130001DAA5 /* Views */,
 				EA83DD0726CE76010001DAA5 /* Controllers */,
 				EA83DD0126CE6D150001DAA5 /* Info.plist */,
 			);
@@ -133,6 +135,7 @@
 				EA83DCF326CE6D120001DAA5 /* AppDelegate.swift */,
 				EA83DCF526CE6D120001DAA5 /* SceneDelegate.swift */,
 				EA83DCFC26CE6D150001DAA5 /* Assets.xcassets */,
+				EA83DD3126CE88B10001DAA5 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				EA83DCF426CE6D120001DAA5 /* AppDelegate.swift in Sources */,
 				EA83DD1226CE78DF0001DAA5 /* LibraryViewController.swift in Sources */,
 				EA83DD3026CE7A010001DAA5 /* UserProfile.swift in Sources */,
+				EA83DD3226CE88B10001DAA5 /* Extensions.swift in Sources */,
 				EA83DD2026CE796E0001DAA5 /* PlaylistViewController.swift in Sources */,
 				EA83DD2E26CE79F60001DAA5 /* Artist.swift in Sources */,
 				EA83DCF626CE6D120001DAA5 /* SceneDelegate.swift in Sources */,
