@@ -30,6 +30,7 @@
 		EA83DD2E26CE79F60001DAA5 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD2D26CE79F60001DAA5 /* Artist.swift */; };
 		EA83DD3026CE7A010001DAA5 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD2F26CE7A010001DAA5 /* UserProfile.swift */; };
 		EA83DD3226CE88B10001DAA5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD3126CE88B10001DAA5 /* Extensions.swift */; };
+		EA83DD3426CFAC580001DAA5 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD3326CFAC580001DAA5 /* AuthResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		EA83DD2D26CE79F60001DAA5 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		EA83DD2F26CE7A010001DAA5 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		EA83DD3126CE88B10001DAA5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EA83DD3326CFAC580001DAA5 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				EA83DD2B26CE79EA0001DAA5 /* AudioTrack.swift */,
 				EA83DD2D26CE79F60001DAA5 /* Artist.swift */,
 				EA83DD2F26CE7A010001DAA5 /* UserProfile.swift */,
+				EA83DD3326CFAC580001DAA5 /* AuthResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				EA83DD0E26CE789F0001DAA5 /* TabBarViewController.swift in Sources */,
 				EA83DCF826CE6D120001DAA5 /* HomeViewController.swift in Sources */,
 				EA83DD2826CE79C40001DAA5 /* HapticsManager.swift in Sources */,
+				EA83DD3426CFAC580001DAA5 /* AuthResponse.swift in Sources */,
 				EA83DD2C26CE79EA0001DAA5 /* AudioTrack.swift in Sources */,
 				EA83DD1626CE79240001DAA5 /* AuthViewController.swift in Sources */,
 				EA83DCF426CE6D120001DAA5 /* AppDelegate.swift in Sources */,
