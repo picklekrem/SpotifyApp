@@ -31,6 +31,7 @@
 		EA83DD3026CE7A010001DAA5 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD2F26CE7A010001DAA5 /* UserProfile.swift */; };
 		EA83DD3226CE88B10001DAA5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD3126CE88B10001DAA5 /* Extensions.swift */; };
 		EA83DD3426CFAC580001DAA5 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD3326CFAC580001DAA5 /* AuthResponse.swift */; };
+		EAA5045526D7A5410097FA7D /* NewReleasesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5045426D7A5410097FA7D /* NewReleasesCellViewModel.swift */; };
 		EAAE41B326D3EDB7001220BB /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE41B226D3EDB6001220BB /* SettingsModel.swift */; };
 		EAEBB35E26D4F838003C1C54 /* NewReleasesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBB35D26D4F838003C1C54 /* NewReleasesResponse.swift */; };
 		EAEBB36026D4F965003C1C54 /* APIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBB35F26D4F965003C1C54 /* APIImage.swift */; };
@@ -72,6 +73,7 @@
 		EA83DD2F26CE7A010001DAA5 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		EA83DD3126CE88B10001DAA5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EA83DD3326CFAC580001DAA5 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		EAA5045426D7A5410097FA7D /* NewReleasesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesCellViewModel.swift; sourceTree = "<group>"; };
 		EAAE41B226D3EDB6001220BB /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		EAEBB35D26D4F838003C1C54 /* NewReleasesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesResponse.swift; sourceTree = "<group>"; };
 		EAEBB35F26D4F965003C1C54 /* APIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIImage.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		EA83DD0B26CE76380001DAA5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EAA5045426D7A5410097FA7D /* NewReleasesCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				EA83DD1026CE78CE0001DAA5 /* SearchViewController.swift in Sources */,
 				EA83DD2A26CE79DD0001DAA5 /* Playlist.swift in Sources */,
 				EA83DD2426CE799E0001DAA5 /* AuthManager.swift in Sources */,
+				EAA5045526D7A5410097FA7D /* NewReleasesCellViewModel.swift in Sources */,
 				EA83DD1826CE793A0001DAA5 /* WelcomeViewController.swift in Sources */,
 				EAEBB36226D50026003C1C54 /* FeaturedPlaylistResponse.swift in Sources */,
 				EA83DD1C26CE79530001DAA5 /* ProfileViewController.swift in Sources */,
