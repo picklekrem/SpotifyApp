@@ -84,7 +84,7 @@ class NewReleaseCollectionViewCell: UICollectionViewCell {
         albumNameLabel.text = viewModel.name
         artistNameLabel.text = viewModel.artistName
         numberOfTrackLabel.text = "Tracks: \(viewModel.numberOfTracks)"
-        albumCoverImageView.sd_setImage(with: viewModel.artWorkUrl, completed: nil)
+        albumCoverImageView.sd_setImage(with: viewModel.artworkUrl, completed: nil)
     }
     
 }

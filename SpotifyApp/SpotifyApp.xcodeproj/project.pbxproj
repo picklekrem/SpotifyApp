@@ -31,6 +31,8 @@
 		EA83DD3026CE7A010001DAA5 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD2F26CE7A010001DAA5 /* UserProfile.swift */; };
 		EA83DD3226CE88B10001DAA5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD3126CE88B10001DAA5 /* Extensions.swift */; };
 		EA83DD3426CFAC580001DAA5 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83DD3326CFAC580001DAA5 /* AuthResponse.swift */; };
+		EA96F83126D8E863003E3304 /* FeaturedPlaylistCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA96F83026D8E863003E3304 /* FeaturedPlaylistCellViewModel.swift */; };
+		EA96F83326D8E8A2003E3304 /* RecommendedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA96F83226D8E8A2003E3304 /* RecommendedCellViewModel.swift */; };
 		EAA5045526D7A5410097FA7D /* NewReleasesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5045426D7A5410097FA7D /* NewReleasesCellViewModel.swift */; };
 		EAAE41B326D3EDB7001220BB /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE41B226D3EDB6001220BB /* SettingsModel.swift */; };
 		EAEBB35E26D4F838003C1C54 /* NewReleasesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBB35D26D4F838003C1C54 /* NewReleasesResponse.swift */; };
@@ -73,6 +75,8 @@
 		EA83DD2F26CE7A010001DAA5 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		EA83DD3126CE88B10001DAA5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EA83DD3326CFAC580001DAA5 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		EA96F83026D8E863003E3304 /* FeaturedPlaylistCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistCellViewModel.swift; sourceTree = "<group>"; };
+		EA96F83226D8E8A2003E3304 /* RecommendedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCellViewModel.swift; sourceTree = "<group>"; };
 		EAA5045426D7A5410097FA7D /* NewReleasesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesCellViewModel.swift; sourceTree = "<group>"; };
 		EAAE41B226D3EDB6001220BB /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		EAEBB35D26D4F838003C1C54 /* NewReleasesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesResponse.swift; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				EAA5045426D7A5410097FA7D /* NewReleasesCellViewModel.swift */,
+				EA96F83026D8E863003E3304 /* FeaturedPlaylistCellViewModel.swift */,
+				EA96F83226D8E8A2003E3304 /* RecommendedCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -365,6 +371,7 @@
 				EA83DD2426CE799E0001DAA5 /* AuthManager.swift in Sources */,
 				EAA5045526D7A5410097FA7D /* NewReleasesCellViewModel.swift in Sources */,
 				EA83DD1826CE793A0001DAA5 /* WelcomeViewController.swift in Sources */,
+				EA96F83126D8E863003E3304 /* FeaturedPlaylistCellViewModel.swift in Sources */,
 				EAEBB36226D50026003C1C54 /* FeaturedPlaylistResponse.swift in Sources */,
 				EA83DD1C26CE79530001DAA5 /* ProfileViewController.swift in Sources */,
 				EA83DD0E26CE789F0001DAA5 /* TabBarViewController.swift in Sources */,
@@ -387,6 +394,7 @@
 				EA83DD2026CE796E0001DAA5 /* PlaylistViewController.swift in Sources */,
 				EA83DD2E26CE79F60001DAA5 /* Artist.swift in Sources */,
 				EAEBB36426D507BD003C1C54 /* RecommendedGenreResponse.swift in Sources */,
+				EA96F83326D8E8A2003E3304 /* RecommendedCellViewModel.swift in Sources */,
 				EA83DCF626CE6D120001DAA5 /* SceneDelegate.swift in Sources */,
 				EA83DD1E26CE795F0001DAA5 /* PlayerViewController.swift in Sources */,
 				EA83DD2226CE79810001DAA5 /* SearchResultViewController.swift in Sources */,

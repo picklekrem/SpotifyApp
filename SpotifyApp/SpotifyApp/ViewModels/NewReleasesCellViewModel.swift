@@ -9,7 +9,7 @@ import Foundation
 
 struct NewReleasesCellViewModel {
     let name : String
-    let artWorkUrl : URL?
+    let artworkUrl : URL?
     let numberOfTracks : Int
     let artistName : String
     
