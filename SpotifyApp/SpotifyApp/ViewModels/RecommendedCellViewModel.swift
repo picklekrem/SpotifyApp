@@ -11,5 +11,4 @@ struct RecommendedCellViewModel {
     let name : String
     let artistName : String
     let artworkUrl : URL?
-    
 }

@@ -8,9 +8,14 @@
 import UIKit
 import SDWebImage
 
+protocol PlaylistHeaderCollectionReusableViewDelegate : AnyObject {
+    func playlistHeaderCollectionReusableViewDidTapPlayAll(_ header : PlaylistHeaderCollectionReusableView)
+}
+
 final class PlaylistHeaderCollectionReusableView: UICollectionReusableView {
     
     static let identifier = "PlaylistHeaderCollectionReusableView"
+    weak var delegate : PlaylistHeaderCollectionReusableViewDelegate?
     
     private let nameLabel : UILabel = {
         let label = UILabel()
@@ -36,7 +41,15 @@ final class PlaylistHeaderCollectionReusableView: UICollectionReusableView {
         imageView.image = UIImage(named: "photo")
         return imageView
     }()
-    
+    private let playAllButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .systemGreen
+        button.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        button.tintColor = .white
+        button.layer.cornerRadius = 30
+        button.layer.masksToBounds = true
+        return button
+    }()
     
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -45,6 +58,8 @@ final class PlaylistHeaderCollectionReusableView: UICollectionReusableView {
         addSubview(nameLabel)
         addSubview(descriptionLabel)
         addSubview(ownerLabel)
+        addSubview(playAllButton)
+        playAllButton.addTarget(self, action: #selector(didTapPlayAll), for: .touchUpInside)
     }
     required init(coder: NSCoder) {
         fatalError()
@@ -57,7 +72,13 @@ final class PlaylistHeaderCollectionReusableView: UICollectionReusableView {
         nameLabel.frame = CGRect(x: 10, y: imageView.bottom, width: width-20, height: 44)
         descriptionLabel.frame = CGRect(x: 10, y: nameLabel.bottom, width: width-20, height: 44)
         ownerLabel.frame = CGRect(x: 10, y: descriptionLabel.bottom, width: width-20, height: 44)
+        
+        playAllButton.frame = CGRect(x: width-80, y: height-80, width: 60, height: 60)
     }
+    @objc func didTapPlayAll() {
+        delegate?.playlistHeaderCollectionReusableViewDidTapPlayAll(self)
+    }
+    
     func configure(with viewModel : PlaylistHeaderViewModel){
         nameLabel.text = viewModel.name
         ownerLabel.text = viewModel.ownerName
