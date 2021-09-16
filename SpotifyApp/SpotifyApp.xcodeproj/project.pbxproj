@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EA051C2526F33BDD00A5870E /* CategoryCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051C2426F33BDD00A5870E /* CategoryCollectionViewCellViewModel.swift */; };
 		EA051C2726F33E6000A5870E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051C2626F33E6000A5870E /* CategoryViewController.swift */; };
+		EA051C2926F3528C00A5870E /* SearchResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051C2826F3528C00A5870E /* SearchResultResponse.swift */; };
+		EA051C2B26F353FB00A5870E /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA051C2A26F353FB00A5870E /* SearchResult.swift */; };
 		EA0B243026E7A6DF0025C22D /* PlaylistHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B242F26E7A6DF0025C22D /* PlaylistHeaderCollectionReusableView.swift */; };
 		EA0B243226E7AAD20025C22D /* PlaylistHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B243126E7AAD20025C22D /* PlaylistHeaderViewModel.swift */; };
 		EA21BDDE26DF7CC800F5D0A7 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21BDDD26DF7CC800F5D0A7 /* AlbumViewController.swift */; };
@@ -63,6 +65,8 @@
 		A32630E1650479F17A125484 /* Pods-SpotifyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyApp.release.xcconfig"; path = "Target Support Files/Pods-SpotifyApp/Pods-SpotifyApp.release.xcconfig"; sourceTree = "<group>"; };
 		EA051C2426F33BDD00A5870E /* CategoryCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		EA051C2626F33E6000A5870E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		EA051C2826F3528C00A5870E /* SearchResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultResponse.swift; sourceTree = "<group>"; };
+		EA051C2A26F353FB00A5870E /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		EA0B242F26E7A6DF0025C22D /* PlaylistHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		EA0B243126E7AAD20025C22D /* PlaylistHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderViewModel.swift; sourceTree = "<group>"; };
 		EA21BDDD26DF7CC800F5D0A7 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 				EA21BDDF26DF83AB00F5D0A7 /* AlbumDetailsResponse.swift */,
 				EA21BDE126DF888400F5D0A7 /* PlaylistDetailsResponse.swift */,
 				EA28076226F1FB2300C9C23C /* AllCategoriesResponse.swift */,
+				EA051C2826F3528C00A5870E /* SearchResultResponse.swift */,
+				EA051C2A26F353FB00A5870E /* SearchResult.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -405,6 +411,7 @@
 				EA83DD1026CE78CE0001DAA5 /* SearchViewController.swift in Sources */,
 				EA21BDE226DF888400F5D0A7 /* PlaylistDetailsResponse.swift in Sources */,
 				EA83DD2A26CE79DD0001DAA5 /* Playlist.swift in Sources */,
+				EA051C2926F3528C00A5870E /* SearchResultResponse.swift in Sources */,
 				EA83DD2426CE799E0001DAA5 /* AuthManager.swift in Sources */,
 				EAA5045526D7A5410097FA7D /* NewReleasesCellViewModel.swift in Sources */,
 				EAE118B126F0C4E500E1D4FD /* AlbumCollectionViewCellViewModel.swift in Sources */,
@@ -435,6 +442,7 @@
 				EA83DD1226CE78DF0001DAA5 /* LibraryViewController.swift in Sources */,
 				EA83DD3026CE7A010001DAA5 /* UserProfile.swift in Sources */,
 				EA0B243026E7A6DF0025C22D /* PlaylistHeaderCollectionReusableView.swift in Sources */,
+				EA051C2B26F353FB00A5870E /* SearchResult.swift in Sources */,
 				EA83DD3226CE88B10001DAA5 /* Extensions.swift in Sources */,
 				EA83DD2026CE796E0001DAA5 /* PlaylistViewController.swift in Sources */,
 				EA83DD2E26CE79F60001DAA5 /* Artist.swift in Sources */,
