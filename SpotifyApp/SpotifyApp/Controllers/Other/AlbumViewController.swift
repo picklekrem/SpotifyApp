@@ -10,7 +10,7 @@ import UIKit
 class AlbumViewController: UIViewController {
     
     private let album: Album
-    
+    private var tracks = [AudioTrack]()
     private var viewModels = [AlbumCollectionViewCellViewModel]()
     
     private let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewCompositionalLayout(sectionProvider: { _, _ ->NSCollectionLayoutSection? in
@@ -54,6 +54,7 @@ class AlbumViewController: UIViewController {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let model):
+                    self?.tracks = model.tracks.items
                     self?.viewModels = model.tracks.items.compactMap({ AlbumCollectionViewCellViewModel(name: $0.name, artistName: $0.artists.first?.name ?? "")
                     })
                     self?.collectionView.reloadData()
@@ -85,7 +86,8 @@ extension AlbumViewController : UICollectionViewDelegate, UICollectionViewDataSo
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        //play song
+        let track = tracks[indexPath.row]
+        PlaybackPresenter.shared.startPlayback(from: self, track: track)
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -105,8 +107,7 @@ extension AlbumViewController : UICollectionViewDelegate, UICollectionViewDataSo
 
 extension AlbumViewController : PlaylistHeaderCollectionReusableViewDelegate {
     func playlistHeaderCollectionReusableViewDidTapPlayAll(_ header: PlaylistHeaderCollectionReusableView) {
-        //start playlist play in queue
-        print("print all")
+        PlaybackPresenter.shared.startPlayback(from: self, tracks: tracks)
     }
 }
 
