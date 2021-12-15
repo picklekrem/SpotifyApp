@@ -18,6 +18,7 @@ final class PlaybackPresenter {
     
     static let shared = PlaybackPresenter()
     var player : AVPlayer?
+    var index = 0
     var playerQueue : AVQueuePlayer?
     private var track : AudioTrack?
     private var tracks = [AudioTrack]()
@@ -26,20 +27,19 @@ final class PlaybackPresenter {
             return track
         }
         else if let player = self.playerQueue, !tracks.isEmpty {
-            let item = player.currentItem
-            let items = player.items()
-            guard let index = items.firstIndex(where: { $0 == item }) else { return nil }
             return tracks[index]
         }
     
         return nil
     }
     
+    var playerVC : PlayerViewController?
+     
     func startPlayback(from viewController: UIViewController, track: AudioTrack) {
         guard let url = URL(string: track.preview_url ?? "") else { return }
         player = AVPlayer(url: url)
         player?.volume = 0.5
-        
+       
         self.track = track
         self.tracks = []
         let vc = PlayerViewController()
@@ -49,6 +49,7 @@ final class PlaybackPresenter {
         viewController.present(UINavigationController(rootViewController: vc), animated: true) { [weak self] in
             self?.player?.play()
         }
+        self.playerVC = vc
        
     }
     func startPlayback(from viewController: UIViewController, tracks: [AudioTrack]) {
@@ -63,6 +64,7 @@ final class PlaybackPresenter {
         let vc = PlayerViewController()
         
         viewController.present(UINavigationController(rootViewController: vc), animated: true, completion: nil)
+        self.playerVC = vc
     }
 }
 
@@ -91,6 +93,9 @@ extension PlaybackPresenter: PlayerViewControllerDelegate {
             player?.pause()
         } else if let player = playerQueue {
             playerQueue?.advanceToNextItem()
+            index += 1
+            print(index)
+            playerVC?.refreshUI()
         }
     }
     
@@ -98,7 +103,7 @@ extension PlaybackPresenter: PlayerViewControllerDelegate {
         if tracks.isEmpty {
             player?.pause()
             player?.play()
-        } else if let firstItem = playerQueue?.items().first {
+        }  else if let firstItem = playerQueue?.items().first{
             playerQueue?.pause()
             playerQueue?.removeAllItems()
             playerQueue = AVQueuePlayer(items: [firstItem])

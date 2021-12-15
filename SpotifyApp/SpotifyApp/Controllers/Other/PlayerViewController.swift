@@ -21,7 +21,6 @@ class PlayerViewController: UIViewController {
     weak var delegate : PlayerViewControllerDelegate?
     private let imageView : UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .systemBlue
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
@@ -58,6 +57,10 @@ class PlayerViewController: UIViewController {
     }
     @objc private func didTapAction() {
         
+    }
+    
+    func refreshUI() {
+        configure()
     }
 }
 extension PlayerViewController: PlayerControlsViewDelegate {
