@@ -1,4 +1,9 @@
-# Spotify Client (iOS - Swift 5 - 2021)
+# Spotify Client (iOS - Swift 5 - 2021) 
+
+[![Swift](https://img.shields.io/badge/Swift-5-orange.svg)](https://swift.org)
+[![Xcode](https://img.shields.io/badge/Xcode-12.4-blue.svg)](https://developer.apple.com/xcode)
+[![Platform](https://img.shields.io/badge/platforms-iOS%20%7C%20-green.svg)](https://github.com/sozman/instagram-clone-swiftUI.git)
+[![MIT](https://img.shields.io/badge/licenses-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
 This is a tutorial app.
 
